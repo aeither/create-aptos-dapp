@@ -8,13 +8,13 @@ All notable changes to the create-aptos-dapp tool will be captured in this file.
 - Rename `collection_id` to `collection_address` in the NFT minting template
 - Move `collection_address` and `fa_address` from `config.ts` to the `.env` file in the minting templates
 - Support devnet for token minting template, nft minting is not supported on devnet because it depends on token-minter contract which is not deployed on devnet
+- Add new view function to minting template that returns user mint balance and display that on UI
 
 # 0.0.23 (2024-08-21)
 
 - Add Token Staking template walkthrough video
 - Change Token minting template walkthrough video
 - Support a `--verbose` flag to run wizard with std out
-- Add new view function to minting template that returns user mint balance and display that on UI
 
 # 0.0.22 (2024-08-19)
 
