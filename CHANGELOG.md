@@ -8,6 +8,7 @@ All notable changes to the create-aptos-dapp tool will be captured in this file.
 - Rename `collection_id` to `collection_address` in the NFT minting template
 - Move `collection_address` and `fa_address` from `config.ts` to the `.env` file in the minting templates
 - Support devnet for token minting template, nft minting is not supported on devnet because it depends on token-minter contract which is not deployed on devnet
+- Add 2 telegram mini app templates, one using wallet adapter and the other using mizu sdk core directly to achieve seamless signing experience
 
 # 0.0.23 (2024-08-21)
 

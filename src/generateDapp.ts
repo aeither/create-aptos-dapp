@@ -1,4 +1,3 @@
-
 import { green, bold, blue } from "kolorist";
 import path from "path";
 import { fileURLToPath } from "node:url";
@@ -111,6 +110,12 @@ export async function generateDapp(selection: Selections) {
         break;
       case "boilerplate-template":
         await generateEnvFile();
+        break;
+      case "tg-mini-app-boilerplate-template":
+        await generateEnvFile();
+        break;
+      case "tg-mini-app-seamless-signing-boilerplate-template":
+        await generateEnvFile(`VITE_MIZU_WALLET_APP_ID=""`);
         break;
       default:
         throw new Error("Unsupported template to generate an .env file for");
